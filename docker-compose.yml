@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  go-api:
+    build: ./go-api
+    ports:
+      - "8081:8081"
+
+  python-api:
+    build: ./python-api
+    ports:
+      - "8082:8082"
+
+  node-api:
+    build: ./node-api
+    ports:
+      - "8083:8083"
+
+  php-api:
+    build: ./php-api
+    ports:
+      - "8084:8084"

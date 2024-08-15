@@ -1,0 +1,5 @@
+Language,Requests per Second,Time per Request (ms),Transfer Rate (Kbytes/sec)
+Go,7040.31,14.204,900.66
+Node.js,4039.31,24.757,863.88
+PHP (FastRoute),3327.38,30.054,724.62
+Python,1310.47,76.309,245.71
