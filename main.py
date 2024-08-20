@@ -8,7 +8,8 @@ apis = [
     {"name": "Go", "url": "http://localhost:8081/"},
     {"name": "Python", "url": "http://localhost:8082/"},
     {"name": "Node.js", "url": "http://localhost:8083/"},
-    {"name": "PHP (FastRoute)", "url": "http://localhost:8084/"}
+    {"name": "PHP (FastRoute)", "url": "http://localhost:8084/"},
+    {"name": "Ruby", "url": "http://localhost:8085/"}
 ]
 
 results = []
@@ -23,6 +24,7 @@ def run_benchmark(api_name, url):
     
     # Extraindo resultados
     output = result.stdout
+    print(f"output for {api_name}: {output}")
     rps = float(output.split("Requests per second:")[1].split("[#/sec]")[0].strip())
     time_per_request = float(output.split("Time per request:")[1].split("[ms]")[0].strip())
     transfer_rate = float(output.split("Transfer rate:")[1].split("[Kbytes/sec]")[0].strip())

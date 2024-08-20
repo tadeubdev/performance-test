@@ -20,3 +20,8 @@ services:
     build: ./php-api
     ports:
       - "8084:8084"
+
+  ruby-api:
+    build: ./ruby-api
+    ports:
+      - "8085:8085"
